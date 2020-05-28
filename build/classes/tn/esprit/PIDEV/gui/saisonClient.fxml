@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.PIDEV.gui.SaisonClientController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="720.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/front-saison.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="61.0" layoutY="139.0" prefHeight="362.0" prefWidth="564.0">
+         <columns>
+            <TableColumn fx:id="animal" prefWidth="122.0" text="Animal" />
+            <TableColumn fx:id="lieu" prefWidth="123.0" text="Lieu" />
+            <TableColumn fx:id="datedeb" prefWidth="132.0" text="Date debut" />
+            <TableColumn fx:id="datefin" prefWidth="131.0" text="Date fin" />
+         </columns>
+      </TableView>
+      <TextField fx:id="rechercher" layoutX="472.0" layoutY="90.0" onAction="#rechercher" promptText="rechercher" />
+      <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="594.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/loop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="107.0" layoutX="15.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/videur.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

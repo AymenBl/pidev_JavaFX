@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.PIDEV.gui.AddsaisonController">
+   <children>
+      <ImageView fitHeight="545.0" fitWidth="733.0" layoutX="-10.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Read-About-the-Most-Innovative-Blaser-R8-Rifle-on-the-Market-Today-1536x683.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="50.0" text="Nom" />
+      <Label layoutX="246.0" layoutY="50.0" text="Annimal" />
+      <Button fx:id="btnSaison" layoutX="498.0" layoutY="67.0" mnemonicParsing="false" onAction="#ajouterSaison" text="Ajouter Saison" />
+      <Separator layoutX="7.0" layoutY="161.0" prefHeight="9.0" prefWidth="600.0" />
+      <Label layoutX="264.0" layoutY="16.0" text="Ajouter  saison" />
+      <TableView fx:id="tableview" layoutX="4.0" layoutY="182.0" prefHeight="256.0" prefWidth="411.0" style="-fx-background-color: #98FB98;">
+         <columns>
+            <TableColumn fx:id="animal" prefWidth="109.0" text="Animal" />
+            <TableColumn fx:id="lieu" prefWidth="107.0" text="Lieu" />
+            <TableColumn fx:id="datedeb" prefWidth="103.0" text="Date debut" />
+            <TableColumn fx:id="datefin" prefWidth="89.0" text="Date fin" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnsup" layoutX="507.0" layoutY="244.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="33.0" prefWidth="77.0" text="Suprimer" />
+      <Button fx:id="btnmodif" layoutX="507.0" layoutY="300.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="33.0" prefWidth="77.0" text="Modifier" />
+      <Label layoutX="21.0" layoutY="111.0" text="Date debut" />
+      <Label layoutX="276.0" layoutY="111.0" text="Date fin" />
+      <DatePicker fx:id="DateBegi" layoutX="94.0" layoutY="107.0" />
+      <DatePicker fx:id="DateEnd" layoutX="339.0" layoutY="107.0" />
+      <ComboBox fx:id="ComLiie" layoutX="79.0" layoutY="46.0" prefWidth="150.0" />
+      <ComboBox fx:id="Comanimal" layoutX="318.0" layoutY="46.0" prefWidth="150.0" />
+      <TextField fx:id="rechercher" layoutX="470.0" layoutY="188.0" onAction="#rechercher" prefHeight="25.0" prefWidth="126.0" promptText="recherche . . ." />
+      <Label layoutX="608.0" layoutY="4.0" prefHeight="42.0" prefWidth="113.0" text="Ajout saison">
+         <font>
+            <Font name="Chiller" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
